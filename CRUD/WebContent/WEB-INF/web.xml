@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CRUD</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.crud.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>UserController</display-name>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.crud.controller.UserController</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>UserAddController</display-name>
+    <servlet-name>UserAddController</servlet-name>
+    <servlet-class>com.crud.controller.UserAddController</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>UserEditController</display-name>
+    <servlet-name>UserEditController</servlet-name>
+    <servlet-class>com.crud.controller.UserEditController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAddController</servlet-name>
+    <url-pattern>/UserAddController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserEditController</servlet-name>
+    <url-pattern>/UserEditController</url-pattern>
+  </servlet-mapping>
+</web-app>
